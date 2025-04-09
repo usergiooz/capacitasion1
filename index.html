@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 1: Concientización – El cuerpo necesita descanso</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.8;
+      padding: 20px;
+      background: url('https://www.race.es/revista-autoclub/wp-content/uploads/sites/4/2016/09/batalla-contra-la-fatiga-9-759x500.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+    }
+    h1, h2, h3 {
+      color: #ffe600;
+    }
+    .section {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+    .question {
+      margin-bottom: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+      border-radius: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #ffe600;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #ffd000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Módulo 1: Concientización – El cuerpo necesita descanso</h1>
+
+  <div class="section">
+    <h2>¿Qué es la fatiga al volante?</h2>
+    <p>La fatiga al volante es una condición peligrosa que ocurre cuando una persona conduce estando física o mentalmente agotada. Este estado compromete seriamente el tiempo de reacción, la concentración, la coordinación motora y la capacidad para tomar decisiones correctas. No solo implica quedarse dormido, sino también conducir en modo automático, donde el conductor no recuerda los últimos kilómetros recorridos. Es una de las principales causas invisibles de accidentes graves.</p>
+  </div>
+
+  <div class="section">
+    <h2>Estadísticas de accidentes por microsueño</h2>
+    <p>Estudios revelan que hasta el 20% de los accidentes graves de tráfico tienen como causa directa la fatiga o el microsueño. El microsueño puede durar apenas unos segundos, pero eso es suficiente para recorrer decenas de metros sin control del vehículo. Por ejemplo, a 100 km/h, 5 segundos de microsueño representan más de 130 metros recorridos a ciegas. Estos eventos ocurren con mayor frecuencia en la madrugada (2 a 6 a.m.) y después del almuerzo (2 a 4 p.m.), cuando el cuerpo naturalmente entra en fases de somnolencia.</p>
+  </div>
+
+  <div class="section">
+    <h2>Señales de alerta del cuerpo</h2>
+    <ul>
+      <li>Sensación de pesadez en los párpados o visión borrosa.</li>
+      <li>Parpadeo lento y frecuente.</li>
+      <li>Cabeceo involuntario del cuello hacia adelante.</li>
+      <li>Desconexión: no recordar los últimos kilómetros recorridos.</li>
+      <li>Dificultad para mantener el vehículo en línea recta o cambiar de carril sin razón.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Alternativas antes de conducir cansado</h2>
+    <ul>
+      <li>Dormir entre 7 y 9 horas antes de realizar trayectos largos.</li>
+      <li>Realizar pausas de descanso de 15 a 30 minutos cada 2 horas de manejo continuo.</li>
+      <li>Utilizar áreas de descanso, estaciones de servicio o moteles para dormir si es necesario.</li>
+      <li>Evitar conducir durante los horarios biológicamente críticos para el cuerpo.</li>
+      <li>Si notas señales de fatiga, no te obligues a continuar: detente y descansa.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Testimonios y videos impactantes</h2>
+    <p>Los relatos de personas que han vivido accidentes por fatiga son poderosos. Muchos cuentan cómo se quedaron dormidos sin darse cuenta, y despertaron con su vehículo fuera del camino o tras haber provocado una colisión. Ver videos grabados por cámaras de seguridad donde se ve a los conductores cabeceando antes de un choque también puede impactar profundamente. Estas historias reales nos recuerdan que nadie está exento del riesgo.</p>
+  </div>
+
+  <h2>Evaluación del módulo</h2>
+  <form id="quizForm">
+    <!-- PREGUNTAS (SIN CAMBIOS) -->
+  </form>
+
+  <h3 id="resultado"></h3>
+
+  <script>
+    function calcularPuntaje() {
+      const form = document.getElementById('quizForm');
+      const data = new FormData(form);
+      let score = 0;
+      for (let value of data.values()) {
+        score += parseInt(value);
+      }
+      document.getElementById('resultado').textContent = `Tu puntaje es: ${score} de 7`;
+    }
+  </script>
+
+</body>
+</html>
+
